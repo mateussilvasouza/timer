@@ -6,18 +6,18 @@ export const LayoutContainer = styled.div`
   margin: 5rem auto;
   padding: 2.5rem;
 
-  background: ${props => props.theme['gray-800']};
-  border-radius:  8px;
+  background: ${(props) => props.theme["gray-800"]};
+  border-radius: 8px;
 
   display: flex;
   flex-direction: column;
 
-  nav{
+  nav {
     display: flex;
     gap: 0.5rem;
   }
 
-  a{
+  a {
     width: 3rem;
     height: 3rem;
 
@@ -25,18 +25,17 @@ export const LayoutContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    color: ${props => props.theme['gray-100']};
+    color: ${(props) => props.theme["gray-100"]};
 
     border-top: 3px solid transparente;
     border-bottom: 3px solid transparente;
 
-    &:hover{
-      border-bottom: 3px solid ${props => props.theme['green-500']};
+    &:hover {
+      border-bottom: 3px solid ${(props) => props.theme["green-500"]};
     }
 
-    &.active{
-      color: ${props => props.theme['green-500']}
+    &.active {
+      color: ${(props) => props.theme["green-500"]};
     }
   }
-
-`
+`;
